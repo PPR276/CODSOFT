@@ -7,5 +7,7 @@ elif c=="-":
     print(a-b)
 elif c=="x":
     print(a*b)
-else:
+elif c=="/":
     print(a/b)
+else :
+    print ("invalid operator")
