@@ -25,7 +25,7 @@ elif a==2:
     c = int (input())
     d.pop(c-1)
     with open(fn, 'w') as file:
-        fn.writelines(d)
+        file.writelines(d)
     print(f"Well Done !! just {len(d)} more to go..")
 elif a==3:
     if len(d)==0:
@@ -35,6 +35,8 @@ elif a==3:
             print (f"Task {d.index(i) +1} : {i}")
 elif a==4:
     d.clear()
+    with open(fn, 'w') as file:
+        file.writelines(d)
     print("You are all set to have a fresh start !")
 else: 
     print("You have entered a wrong option. please enter a valid option !")
