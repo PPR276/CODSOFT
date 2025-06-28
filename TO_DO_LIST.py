@@ -24,6 +24,8 @@ elif a==2:
     print("enter the task number you want to delete : ")
     c = int (input())
     d.pop(c-1)
+    with open(fn, 'w') as file:
+        fn.writelines(d)
     print(f"Well Done !! just {len(d)} more to go..")
 elif a==3:
     if len(d)==0:
